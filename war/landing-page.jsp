@@ -29,6 +29,9 @@
 				Hello, ${fn:escapeXml(user.nickname)}!
 				(<a href="${logoutURL}">Sign Out</a>)
 			</p>
+			<p>
+				<a href="new-post.jsp">Make a new blog post.</a>
+			</p>
 		<%
 		}
 		else {
