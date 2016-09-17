@@ -62,27 +62,28 @@
 		// Display them or the lack of them.
 		if( posts.isEmpty() ) {
 		%>
-			<h3>There are no blog posts.</h3>
+			<h2>There are no blog posts.</h2>
 		<%
 		}
 		else {
 		%>
-			<h3><u>Recent blog posts</u></h3>
+			<h2><u>Recent blog posts</u></h2>
 		<%
 			for( BlogPost post : posts ) {
 				// Format the message:
 				String username = post.user.getNickname();
 				String date = new SimpleDateFormat("EEEE MMMM d 'at' hh:mm")
 					.format(post.date);
+				pageContext.setAttribute("title", post.title);
 				pageContext.setAttribute("date", date);
 				pageContext.setAttribute("username", username);
 				pageContext.setAttribute("post", post.content);
 		%>
-				<p>
-					On ${fn:escapeXml(date)}, <b>${fn:escapeXml(username)}</b> wrote:
-					<br/>
+				<div class="post">
+					<h3><u>${fn:escapeXml(title)}</u></h3>
+					<p>Written by <b>${fn:escapeXml(username)} on ${fn:escapeXml(date)}</b>
 					<blockquote>${fn:escapeXml(post)}</blockquote>
-				</p>
+				</div>
 		<%
 			}
 		}

@@ -19,6 +19,11 @@ public class BlogPost implements Comparable<BlogPost> {
 	public User user;
 	
 	/**
+	 * The title of the blog post.
+	 */
+	public String title;
+	
+	/**
 	 * The content of the blog post.
 	 */
 	public String content;
@@ -40,8 +45,9 @@ public class BlogPost implements Comparable<BlogPost> {
 	 * @param user  The user who wrote the blog post.
 	 * @param content  The content of the blog post. 
 	 */
-	public BlogPost(User user, String content) {
+	public BlogPost(User user, String title, String content) {
 		this.user = user;
+		this.title = title;
 		this.content = content;
 		this.date = new Date();
 	}

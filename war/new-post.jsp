@@ -26,6 +26,7 @@
 		---------------------------------------------------------------------->
 		<h2>New blog post:</h2>
 		<form action="/submit" method="post">
+			<div><textarea name="title" rows="1" cols="60"></textarea></div>
 			<div><textarea name="content" rows="40" cols="60"></textarea></div>
 			<div>
 				<input type="submit" value="Post"/>
