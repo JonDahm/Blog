@@ -59,10 +59,10 @@ public class BlogPost implements Comparable<BlogPost> {
 	@Override
 	public int compareTo(BlogPost other) {
 		if( date.after(other.date) ) {
-			return 1;
+			return -1;
 		}
 		if( date.before(other.date) ) {
-			return -1;
+			return 1;
 		}
 		return 0;
 	}

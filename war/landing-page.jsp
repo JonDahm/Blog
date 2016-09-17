@@ -74,7 +74,11 @@
 				String username = post.user.getNickname();
 				String date = new SimpleDateFormat("EEEE MMMM d 'at' hh:mm")
 					.format(post.date);
-				pageContext.setAttribute("title", post.title);
+				String title = post.title;
+				if( title == null || title.equals("") ) {
+					title = "Untitled";
+				}
+				pageContext.setAttribute("title", title);
 				pageContext.setAttribute("date", date);
 				pageContext.setAttribute("username", username);
 				pageContext.setAttribute("post", post.content);

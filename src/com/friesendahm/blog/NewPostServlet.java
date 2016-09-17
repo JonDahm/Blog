@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 public class NewPostServlet extends HttpServlet {
 	static{
 		ObjectifyService.register(BlogPost.class);
-}
+	}
     public void doPost(HttpServletRequest req, HttpServletResponse resp)
                 throws IOException {
         UserService userService = UserServiceFactory.getUserService();
@@ -28,8 +28,9 @@ public class NewPostServlet extends HttpServlet {
         	userName = user.getNickname();
         }
         String content = req.getParameter("content");
+        String title = req.getParameter("title");
         Date date = new Date();
-        BlogPost post = new BlogPost(user,content);//Create a new post using the user and the content.
+        BlogPost post = new BlogPost(user, title, content);//Create a new post using the user and the content.
         ofy().save().entities(post).now();//Chuck the BlogPost into Objectify using a synchronous call
         resp.sendRedirect("/");//Send the response 
     }
