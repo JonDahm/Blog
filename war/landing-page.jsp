@@ -196,7 +196,7 @@
 							Written by <b>${fn:escapeXml(username)}</b> on <b>${fn:escapeXml(date)}</b>
 						</p>
 						<hr class="m-y-2"/>
-						<blockquote>${fn:escapeXml(post)}</blockquote>
+						<blockquote>${post}</blockquote>
 					</div>
 			<%
 				}
