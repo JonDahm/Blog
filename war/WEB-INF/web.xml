@@ -42,4 +42,27 @@
     <welcome-file-list>
         <welcome-file>landing-page.jsp</welcome-file>
     </welcome-file-list>
+    <!-- These URLs are restricted to logged in users. -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>user-services</web-resource-name>
+            <url-pattern>/submit</url-pattern>
+            <url-pattern>/subscribe</url-pattern>
+            <url-pattern>/unsubscribe</url-pattern>
+            <url-pattern>/new-post.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>*</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <!-- These URLS are restricted to logged in admins. -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>admin-services</web-resource-name>
+            <url-pattern>/cron/cronjob</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
 </web-app>
