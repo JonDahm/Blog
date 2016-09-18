@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+	<cron>
+		<url>/cron/cronjob</url>
+		<description>Send an Email to subscribers every day at 5:00 with all blog posts from the last 24 hours</description>
+		<schedule>every day 17:00</schedule>
+		<timezone>America/Mexico_City</timezone>
+	</cron>
+</cronentries>

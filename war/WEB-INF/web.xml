@@ -29,7 +29,14 @@
 		<servlet-name>unsubscribe</servlet-name>
 		<url-pattern>/unsubscribe</url-pattern>
 	</servlet-mapping>
-		
+	<servlet>
+		<servlet-name>CronServlet</servlet-name>
+		<servlet-class>com.friesendahm.blog.CronServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CronServlet</servlet-name>
+		<url-pattern>/cron/cronjob</url-pattern>
+	</servlet-mapping>
 	
     <filter>
         <filter-name>ObjectifyFilter</filter-name>
@@ -66,3 +73,4 @@
         </auth-constraint>
     </security-constraint>
 </web-app>
+
