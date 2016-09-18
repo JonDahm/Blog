@@ -90,39 +90,11 @@
 						<img class="img-circle" src="/img/jondahm.jpg"/>
 					</a>
 					<div class="media-body">
+						<h1>About Us</h1>
 						<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu tortor
-						augue. Etiam fermentum enim diam, in finibus lorem vehicula vitae.
-						Donec eu vestibulum purus. Vivamus ac leo lorem. Sed vel magna ut
-						massa ornare luctus. Sed sagittis, lectus ac gravida pellentesque,
-						nulla dolor vehicula enim, sit amet dignissim est tellus sed diam.
-						Curabitur vitae tortor dictum, posuere ex ac, hendrerit ex. Cras neque
-						massa, tristique et mattis sit amet, fringilla non diam.
-						</p>
-						<p>
-						Sed hendrerit et odio at accumsan. Nunc laoreet semper elit non
-						fermentum. Donec nisi enim, facilisis a massa et, hendrerit faucibus
-						nibh. In interdum, felis id tempor vulputate, augue ligula suscipit
-						dolor, quis ornare orci massa non nisi. Quisque rutrum diam vel diam
-						euismod, sed hendrerit ex iaculis. Praesent molestie quam risus, et
-						ornare enim hendrerit quis. Aenean vitae lectus aliquam, dapibus enim
-						in, feugiat erat. Donec rutrum lacus libero, vel faucibus neque
-						suscipit non. Ut urna lacus, tincidunt id cursus at, maximus in tellus.
-						Integer est sapien, gravida ut turpis nec, luctus hendrerit mi.
-						Vestibulum eu sem sagittis, eleifend dolor at, facilisis massa.
-						</p>
-						<p>
-						Proin hendrerit odio convallis porta sagittis. Ut mi dui, venenatis
-						eget enim vel, consequat consectetur magna. Interdum et malesuada
-						fames ac ante ipsum primis in faucibus. Morbi ultricies turpis vel
-						justo faucibus, quis ultricies ante laoreet. Curabitur sagittis
-						sollicitudin felis, vel consequat eros scelerisque quis. Ut a tortor
-						aliquam, convallis magna ut, faucibus metus. Aliquam risus felis,
-						consectetur vel vehicula gravida, tempor sed nunc. Praesent in
-						vulputate sapien. Nulla luctus consectetur bibendum. Phasellus id
-						efficitur turpis. Duis elementum orci lacus, sit amet interdum libero
-						efficitur vel. Sed ac nisl mi. Donec neque orci, accumsan quis urna
-						et, ornare dapibus nisl.
+							We are Jon Dahm and Jonathan Friesen, two Electrical Engineering
+							students at the University of Texas. This blog was created for an
+							assignment in our software engineering class.
 						</p>
 					</div>
 					<a class="media-right">
