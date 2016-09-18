@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="java.util.List" %>
+<%@ page import="java.util.*" %>
 <%@ page import="java.util.Collections" %>
 <%@ page import="java.text.SimpleDateFormat" %>
 <%@ page import="com.google.appengine.api.users.*" %>
@@ -85,6 +85,30 @@
 				Show previous blog posts.
 			------------------------------------------------------------------------>
 			<%
+			//subscriber options
+			if(user!=null){
+				ObjectifyService.register(Subscriber.class);
+				List<Subscriber> users = ObjectifyService.ofy().load()
+			 		.type(Subscriber.class).list();
+				ListIterator<Subscriber> UserIt = users.listIterator();
+				Subscriber jimmy = new Subscriber("jimmy");
+				boolean subscriber_check = false;
+				while(UserIt.hasNext()){
+					jimmy.setEmail(UserIt.next().getEmail());
+					if(jimmy.getEmail().equals(user.getEmail())){
+						subscriber_check = true;
+					}
+				}
+				if(subscriber_check){
+					%>
+						<a class="nav-link" href="/unsubscribe">Unsubscribe</a>
+					<%
+				}else{
+					%>
+						<a class="nav-link" href="/subscribe">Subscribe</a>
+					<%				
+				}
+			}
 			// Get the list of posts.
 			ObjectifyService.register(BlogPost.class);
 			List<BlogPost> posts = ObjectifyService.ofy().load()

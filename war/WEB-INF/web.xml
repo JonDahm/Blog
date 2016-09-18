@@ -13,7 +13,23 @@
 		<servlet-name>submit</servlet-name>
 		<url-pattern>/submit</url-pattern>
 	</servlet-mapping>
-	
+	<servlet>
+		<servlet-name>subscribe</servlet-name>
+		<servlet-class>com.friesendahm.blog.SubscribeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>subscribe</servlet-name>
+		<url-pattern>/subscribe</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>unsubscribe</servlet-name>
+		<servlet-class>com.friesendahm.blog.UnsubscribeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>unsubscribe</servlet-name>
+		<url-pattern>/unsubscribe</url-pattern>
+	</servlet-mapping>
+		
 	
     <filter>
         <filter-name>ObjectifyFilter</filter-name>
