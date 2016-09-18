@@ -40,7 +40,7 @@
 				</button>
 				<div class="container">
 					<div class="collapse navbar-toggleable-xs" id="collapseEx2">
-						<a class="navbar-brand white-text">Jon &amp; Jon's Blog</a>
+						<a class="navbar-brand white-text" href="/">Jon &amp; Jon's Blog</a>
 						<ul class="nav navbar-nav">
 							<li class="nav-item">
 								<a class="nav-link" href="/">Home</a>
@@ -49,7 +49,7 @@
 								<a class="nav-link" href="/all-posts.jsp">All Posts</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="new-post.jsp">New Post</a>
+								<a class="nav-link" href="/new-post.jsp">New Post</a>
 							</li>
 						</ul>
 						<%
@@ -123,6 +123,20 @@
 			}
 			%>
 		</div></main>
+		
+		<!-- SCRIPTS -->
+		
+		<!-- JQuery -->
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+		
+		<!-- Bootstrap tooltips -->
+		<script type="text/javascript" src="js/tether.min.js"></script>
+		
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="js/mdb.min.js"></script>
 	</body>
 </html>
 

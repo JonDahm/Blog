@@ -40,7 +40,7 @@
 				</button>
 				<div class="container">
 					<div class="collapse navbar-toggleable-xs" id="collapseEx2">
-						<a class="navbar-brand white-text">Jon &amp; Jon's Blog</a>
+						<a class="navbar-brand white-text" href="/">Jon &amp; Jon's Blog</a>
 						<ul class="nav navbar-nav">
 							<li class="nav-item active">
 								<a class="nav-link" href="/">Home</a>
