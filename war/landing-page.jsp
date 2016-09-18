@@ -13,7 +13,7 @@
 %>
 <html>
 	<head>
-		<title>Jon &amp; Jon's blog</title>
+		<title>Jon &amp; Jon's Blog</title>
 		
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
