@@ -49,7 +49,7 @@
 								<a class="nav-link" href="/all-posts.jsp">All Posts</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="new-post.jsp">New Post</a>
+								<a class="nav-link" href="/new-post.jsp">New Post</a>
 							</li>
 						</ul>
 						<%
@@ -151,12 +151,12 @@
 				}
 				if(subscriber_check){
 					%>
-						<a class="nav-link" href="/unsubscribe">Unsubscribe</a>
+						<a class="btn btn-dark-green pull-xs-right" href="/unsubscribe">Unsubscribe</a>
 					<%
 				}else{
 					%>
-						<a class="nav-link" href="/subscribe">Subscribe</a>
-					<%				
+						<a class="btn btn-dark-green pull-xs-right" href="/subscribe">Subscribe</a>
+					<%
 				}
 			}
 			// Get the list of posts.
