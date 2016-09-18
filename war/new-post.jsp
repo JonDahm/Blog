@@ -82,12 +82,14 @@
 				<div class="md-form">
 					<input type="text" class="form-control" id="post_title"
 					       name="title"
+					       required="required"
 					       placeholder="Enter a Title"/>
-					<label for="post_title" class="">Title</label>
+					<label for="post_title">Title</label>
 				</div>
 				<div class="md-form">
 					<textarea type="text" id="post_content" class="md-textarea"
 					          name="content"
+					          required="required"
 					          style="height:40rem; overflow:scroll; padding: 0.6rem 0;"></textarea>
 					<label for="post_content">Post content</label>
 				</div>
