@@ -135,20 +135,20 @@
 				Show previous blog posts.
 			------------------------------------------------------------------------>
 			<%
-			//subscriber options
-			if(user!=null){
+			// Subscriber options
+			if( user!=null ) {
+				// Check if the user is already subscribed to our blog:
 				ObjectifyService.register(Subscriber.class);
-				List<Subscriber> users = ObjectifyService.ofy().load()
-			 		.type(Subscriber.class).list();
-				ListIterator<Subscriber> UserIt = users.listIterator();
-				Subscriber jimmy = new Subscriber("jimmy");
+				List<Subscriber> subscribers = ObjectifyService.ofy().load()
+					.type(Subscriber.class).list();
 				boolean subscriber_check = false;
-				while(UserIt.hasNext()){
-					jimmy.setEmail(UserIt.next().getEmail());
-					if(jimmy.getEmail().equals(user.getEmail())){
+				for( Subscriber subscriber : subscribers ) {
+					if( subscriber.getEmail().equals(user.getEmail()) ){
 						subscriber_check = true;
+						break;
 					}
 				}
+				// Display the appropriate button for the user:
 				if(subscriber_check){
 					%>
 						<a class="btn btn-dark-green pull-xs-right" href="/unsubscribe">Unsubscribe</a>
@@ -159,6 +159,7 @@
 					<%
 				}
 			}
+			
 			// Get the list of posts.
 			ObjectifyService.register(BlogPost.class);
 			List<BlogPost> posts = ObjectifyService.ofy().load()
