@@ -87,7 +87,7 @@
 			<div class="jumbotron">
 				<div class="media">
 					<a class="media-left">
-						<img class="img-circle" src="/img/jondahm.jpg"/>
+						<img class="img-circle" src="/img/jondahm.jpg" style="margin:0.75rem;"/>
 					</a>
 					<div class="media-body">
 						<h1>About Us</h1>
@@ -98,7 +98,7 @@
 						</p>
 					</div>
 					<a class="media-right">
-						<img class="img-circle" src="/img/jonfriesen.jpg"/>
+						<img class="img-circle" src="/img/jonfriesen.jpg" style="margin:0.75rem;"/>
 					</a>
 				</div>
 			</div>
